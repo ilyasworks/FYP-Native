@@ -5,15 +5,9 @@ import Show from './components/Test';
 
 const App = () => {
   return (
-    <View style={{ 
-      flex: 1 , 
-      justifyContent: 'center' }}>
-        <ImageBackground 
-      style={styles.backgroundImage} 
-      source={require('./assets/background.png')}>
-      {/* <Show/> */}
+    <View style={{ flex: 1 , justifyContent: 'center' }}>
+            {/* <Show/> */}
       <Login/>
-      </ImageBackground>
     </View>
   );
 };

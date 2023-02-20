@@ -1,7 +1,10 @@
-// import { Text } from "react-native";
+import { Text, View } from "react-native";
 
-// export default function Show() {
-//   return (
-//     <Text >WELCOME TO UOBS GPS TRACKER</Text>
-//   );
-// }
+
+export default function Show() {
+  return (
+    <View>
+    <Text>WELCOME TO UOBS GPS TRACKER</Text>
+    </View>
+  );
+}
