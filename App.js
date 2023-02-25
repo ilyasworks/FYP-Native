@@ -6,7 +6,7 @@ import Show from './components/Test';
 const App = () => {
   return (
     <View style={{ flex: 1 , justifyContent: 'center' }}>
-            {/* <Show/> */}
+      <Show/>
       <Login/>
     </View>
   );

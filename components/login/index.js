@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image, ImageBackground } from 'react-native';
 import { useNavigation, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import EnableLocation from '../EnableLocation';
-import CreateAccount from '../CreateAccount'
-
+import {EnableLocation} from '../EnableLocation';
+import CreateAccount from '../CreateAccount';
+import Location from '../Location';
 const Home = () => {
  
   const [email, setEmail] = useState('');
@@ -64,9 +64,6 @@ const Home = () => {
         <TouchableOpacity style={styles.button} onPress={() => handleChange(13)}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
-        {/* <View>
-      <Button title="Go to new screen"  onPress={() => handleChange(13)}/>
-      </View> */}
         <View>
           <Text style={styles.forget_password}> Forget Password</Text>
         </View>
@@ -92,6 +89,7 @@ export default function Login() {
         <Stack.Screen name='Login' component={Home} />
         <Stack.Screen name='Back' component={EnableLocation} />
         <Stack.Screen name='create_account' component={CreateAccount} />
+        <Stack.Screen name='location' component={Location} />
       </Stack.Navigator>
     </NavigationContainer>
   );
