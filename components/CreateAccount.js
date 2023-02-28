@@ -1,13 +1,12 @@
-import { Text, View, Image, ImageBackground, TextInput, TouchableOpacity, StyleSheet } from "react-native";
-import { setEmail, email, password, setPassword, CheckBox } from "react-native";
-import { Alert } from 'react-native';
+import { Text, View, Image, Alert, ImageBackground, TextInput, TouchableOpacity, StyleSheet } from "react-native";
+import { useState } from "react";
 
 
 
 const SucessAlert = () => {
   Alert.alert(
-    'Button Pressed',
-    'You have pressed the button!',
+    'Congratulation!',
+    'congratulation your account has been created.',
     [
       {
         text: 'OK',
@@ -20,6 +19,18 @@ const SucessAlert = () => {
 
 
 export default function AccountData() {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+
+  const handleChangeText = (value) => {
+    setEmail(value)
+  }
+  const handlePassword = (value) => {
+    setPassword(value)
+  }
+
   return (
     <ImageBackground
       style={styles.backgroundImage}
@@ -32,7 +43,7 @@ export default function AccountData() {
           style={styles.input}
           placeholder="Muhammad Ilyas"
           value={email}
-          onChangeText={setEmail}
+          onChangeText={handleChangeText}
         />
 
         <Text style={styles.LableText}> Email* </Text>
@@ -40,14 +51,14 @@ export default function AccountData() {
           style={styles.input}
           placeholder="ilyas@gmail.com"
           value={email}
-          onChangeText={setEmail}
+          onChangeText={handleChangeText}
         />
         <Text style={styles.LableText}>Registration Number* </Text>
         <TextInput
           style={styles.input}
           placeholder="2019-uobs-203"
           value={email}
-          onChangeText={setEmail}
+          onChangeText={handleChangeText}
         />
 
         <Text style={styles.LableText}> Set Password* </Text>
@@ -55,7 +66,7 @@ export default function AccountData() {
           style={styles.input}
           placeholder="Password"
           value={password}
-          onChangeText={setPassword}
+          onChangeText={handlePassword}
           secureTextEntry
         />
         <View style={styles.button_create_account}>

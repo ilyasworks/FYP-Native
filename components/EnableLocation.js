@@ -5,7 +5,6 @@ import { useNavigation, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Location from './Location';
 
-
 // const handleButtonPress = () => {
 //     Alert.alert(
 //       'OOPS!',
@@ -63,7 +62,6 @@ const styles = StyleSheet.create({
     logo: {
       width: 80,
       height: 100
-  
     },
     Text_Heading: {
       paddingBottom: 0,

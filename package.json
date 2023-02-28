@@ -9,19 +9,20 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@expo/webpack-config": "^0.17.2",
+    "@expo/webpack-config": "^18.0.1",
     "@react-navigation/native": "^6.1.4",
     "@react-navigation/native-stack": "^6.9.10",
+    "@rnmapbox/maps": "^10.0.0-beta.70",
     "@types/react": "~18.0.24",
     "@types/react-native": "~0.70.6",
-    "expo": "~47.0.12",
+    "expo": "^48.0.4",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-native-maps": "^1.4.0",
     "react-native-svg": "13.4.0",
     "react-native-web": "^0.18.12",
-    "react-native-webview": "11.23.1",
-    "typescript": "^4.6.3"
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
